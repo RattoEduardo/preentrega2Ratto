@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- link de css -->
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <title>Contacto</title>
+</head>
+<body>
+    <!-- baner principal -->
+    <Header>
+        <img src="/imagenes/logo.jpeg" alt="logo">
+        <nav>
+            <ul>
+                <li>
+                    <a href="/index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="/pages/planesyprecios.html">Planes y precios</a>
+                </li>
+                <li>
+                    <a href="/pages/horariosyclases.html">Horarios y clases</a>
+                </li>
+                <li>
+                    <a href="/pages/nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="/pages/contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </Header>
+    
+    <!-- contenido principal -->
+    <main>
+        <form action="/submit" method="post">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre">
+    
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+    
+            <label for="telefono">Telefono:</label>
+            <input type="tel" name="telefono" id="telefono">
+    
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+    
+            <input type="submit" value="Enviar">
+    
+    
+        </form>
+
+    </main>
+
+    <!-- pie de pagina -->
+    <footer>
+        <p>© 2025 Aloha Gym - Santa Clara del Mar. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>    
