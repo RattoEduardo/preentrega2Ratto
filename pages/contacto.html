@@ -6,7 +6,43 @@
     
     <!-- link de css -->
     <link rel="stylesheet" href="../css/style.css">
-    
+    <style>
+        /* estilos para contacto.html */
+
+        /* estilos de main */
+
+        main div form {
+           color: antiquewhite;
+           display: grid;
+           grid-template-columns: 75px 1fr;
+           grid-template-rows: repeat(3, 10%) 40% 10%;
+           gap: 10px 20px;
+        }
+
+        main div {
+           padding: 25%;
+        }
+
+        main div form input {
+           grid-column: 2;
+        }
+
+        
+
+        /* estilos de desktop */
+
+        @media screen and (min-width: 1024px) {
+          main div form {
+              display: grid;
+              grid-template-columns: 150px 1fr;
+              gap: 10px 20px;
+            }
+
+          main div {
+              padding:10% 25%;
+          }
+        }
+    </style>
     <title>Contacto</title>
 </head>
 <body>
@@ -35,26 +71,25 @@
     </Header>
     
     <!-- contenido principal -->
-    <main>
-        <form action="/submit" method="post">
+    <main class="form.container"> 
+        <div>
+            <form action="/submit" method="post">
 
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" id="nombre">
+               <label for="nombre">Nombre:</label>
+               <input type="text" name="nombre" id="nombre">
     
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email">
+               <label for="email">Email:</label>
+               <input type="email" name="email" id="email">
     
-            <label for="telefono">Telefono:</label>
-            <input type="tel" name="telefono" id="telefono">
+               <label for="telefono">Telefono:</label>
+               <input type="tel" name="telefono" id="telefono">
     
-            <label for="mensaje">Mensaje:</label>
-            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+               <label for="mensaje">Mensaje:</label>
+               <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
     
-            <input type="submit" value="Enviar">
-    
-    
-        </form>
-
+               <input type="submit" value="Enviar">
+            </form>
+        </div>    
     </main>
 
     <!-- pie de pagina -->
