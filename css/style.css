@@ -22,7 +22,7 @@ header {
 }
 
 header img {
-    width: 15%;
+    width: 20%;
 }
 
 header nav ul {
@@ -113,5 +113,9 @@ footer {
         width: 100%;
         height: 100%;
         object-fit: scale-down;
+    }
+
+    header img {
+        width: 10%;
     }
 }
